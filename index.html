@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<!-- Body -->
+
+<body>
+    <!--HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="navigation">
+                <a href="./index.html" class="logotype header-logo"><img src="/images/logo.png" class="img-logo"></a>
+                <!-- NAVIGATION -->
+            </nav>
+            <address class="adres">
+                <ul class="page-contact">
+                    <li>
+                        <a href="mailto:lukasz.mielan@gmail.com" class="adres-nav">lukasz.mielan@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+48517268668" class="adres-nav">+48 517 268 668</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section class="section-one">
+            <div class="container page-hero">
+                <ul class="bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h2 class="hero-h2 fade-in">Witamy na stronie Okna Mielan - Twojego zaufanego partnera w zakresie okien PCV, aluminiowych i drewnianych. Oferujemy
+                szeroki wybór energooszczędnych okien, drzwi oraz rolet, które łączą nowoczesny design z doskonałą izolacją termiczną i
+                akustyczną. Nasze produkty zapewniają komfort, bezpieczeństwo i trwałość na lata.</h2>
+                <p class="hero-p fade-in delay">Dzięki wieloletniemu doświadczeniu dostarczamy okna na wymiar, dopasowane do indywidualnych potrzeb klientów. Świadczymy
+                kompleksowe usługi - od profesjonalnego doradztwa i pomiarów, po fachowy montaż i serwis. Działamy na terenie
+                Częstochowy i okolic, współpracując zarówno z klientami indywidualnymi, jak i firmami budowlanymi.</p>
+            </div>
+        </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function fadeInOnScroll() {
+                let elements = document.querySelectorAll(".fade-in");
+                elements.forEach(el => {
+                    let position = el.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    if (position < windowHeight - 50) {
+                        el.classList.add("show");
+                    }
+                });
+            }
+
+            fadeInOnScroll();
+            window.addEventListener("scroll", fadeInOnScroll);
+        });
+    </script>
+        <!-- SECTION 2 -->
+        <section class="section-two">
+            <div class="container page-about">
+                <h2 class="visually-hidden">O nas</h2>
+                <div class="parent-div">
+                    <ul class="ul-container">
+                        <li class="child-container">
+                            <h2 class="text-about">Realizujemy projekty dla klientów indywidualnych, firm i deweloperów, dostarczając okna
+                                PCV,
+                                aluminiowe i drewniane
+                                najwyższej jakości. Każda realizacja to połączenie nowoczesnych technologii, estetyki i trwałości, dzięki
+                                czemu
+                                nasze
+                                energooszczędne okna spełniają najwyższe standardy izolacji termicznej i akustycznej.
+                    
+                                Nasze montaże obejmują zarówno nowoczesne budownictwo, jak i wymianę stolarki okiennej w budynkach już
+                                istniejących.
+                    
+                                Sprawdź nasze realizacje i przekonaj się, dlaczego warto wybrać Okna Mielan - gwarancję jakości, solidności
+                                i
+                                estetyki.</h2>
+                        </li>
+                        <li class="child-container">
+                            <ul class="about-ul">
+                                <li class="about-li">
+                                    <div class="icon-sect-two hidden">
+                                        <svg class="icon" width="64" height="64">
+                                            <use href=""></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="name-about">Quality</h3>
+                                    <p class="text-about">
+                                    </p>
+                                </li>
+                                <li class="about-li">
+                                    <div class="icon-sect-two hidden">
+                                        <svg class="icon" width="64" height="64">
+                                            <use href=""></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="name-about">Domestic & Commercial</h3>
+                                    <p class="text-about"></p>
+                                </li>
+                                <li class="about-li">
+                                    <div class="icon-sect-two hidden">
+                                        <svg class="icon" width="64" height="64">
+                                            <use href=""></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="name-about">Koszt</h3>
+                                    <p class="text-about"></p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <section class="section-three">
+            <div class="container page-team">
+                <div class="typing-text">
+                    <span id="typewriter" class="fade-in-text"></span>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const text = "W Okna Mielan od lat dostarczamy wysokiej jakości okna i drzwi, które spełniają oczekiwania nawet najbardziej wymagających klientów. Jesteśmy firmą, która łączy nowoczesne technologie z solidnym rzemiosłem, oferując produkty o doskonałej izolacji termicznej, estetyce i trwałości. Naszym priorytetem jest satysfakcja klientów, dlatego zapewniamy kompleksową obsługę – od doradztwa i pomiarów po montaż i serwis. Współpracujemy zarówno z klientami indywidualnymi, jak i firmami, dostarczając rozwiązania dostosowane do różnych potrzeb i budżetów.";
+
+                const typewriter = document.getElementById("typewriter");
+                typewriter.innerHTML = text;
+
+                // Плавное появление текста
+                typewriter.classList.add("fade-in");
+            });
+        </script>
+        <!-- SECTION 4 -->
+        <section class="section-four">
+            <div class="container">
+                <div id="slider-container">
+                    <div id="top">
+                        <img src="/images/arrow.png" alt="" class="arrow arrow-left">
+                        <div id="frame">
+                            <div id="slider">
+                                <img src="/images/photo-1.png" alt="" class="slider-image">
+                                <img src="/images/photo-2.png" alt="" class="slider-image">
+                                <img src="/images/photo-3.png" alt="" class="slider-image">
+                                <img src="/images//photo-4.png" alt="" class="slider-image">
+                                <img src="/images//photo-5.png" alt="" class="slider-image">
+                            </div>
+                        </div>
+                        <img src="/images/arrow.png" alt="" class="arrow arrow-right">
+                    </div>
+                    <div id="bottom"></div>
+                </div>
+            </div>
+        </section>
+        <script src="/js/script.js"></script>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container page-footer">
+            <div class="footer-container">
+                <a href="./index.html" class="logotype logotype-footer"></a>
+                <p class="text-footer"></p>
+            </div>
+            <div class="footer-socialmedia">
+                <p class="p-socialmedia">Social media</p>
+                <ul class="ul-footer">
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
